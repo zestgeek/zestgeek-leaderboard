@@ -12,10 +12,10 @@ const Routes = () => {
     return (
         <Router history={history}>
         	<Container>
-            <Switch>
-                <Route exact path="/" component={Login} />
-                <Route exact path="/leaderboard" component={LeaderBoard} />
-            </Switch>
+	            <Switch>
+	                <Route exact path="/" component={Login} />
+	                <Route exact path="/leaderboard" component={LeaderBoard} />
+	            </Switch>
             </Container>
         </Router>
     )
