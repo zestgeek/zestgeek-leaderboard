@@ -1,6 +1,8 @@
+/*container will go here and all the common components like header footer sidebar should be here 
+*/
 import React from 'react'
 
-import LeaderBoardTable from '../../components/views/LeaderBoard/LeaderBoardTable'
+import Header from './header'
 
 const leaderBoardList = [
     {
@@ -26,13 +28,12 @@ const leaderBoardList = [
     },
 ]
 
-const LeaderBoard = () => {
+const LeaderBoard = (props) => {
     return (
-            <div className="columns is-centered">
-                <div className="column is-two-thirds is-centered flex">
-                    <LeaderBoardTable list={leaderBoardList} />
-                </div>
-            </div>
+        <div className="container">
+            <Header />
+            {props.children}
+        </div>
     )
 }
 
