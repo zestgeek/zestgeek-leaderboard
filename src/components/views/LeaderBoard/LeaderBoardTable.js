@@ -2,7 +2,7 @@ import React from 'react'
 import LeaderBoardList from './LeaderBoardItemList'
 
 const LeaderBoardTable = ({ list }) =>
-    <table class="table">
+    <table className="table">
         <thead>
             <tr>
                 <th><abbr title="Position">Pos</abbr></th>

@@ -28,18 +28,11 @@ const leaderBoardList = [
 
 const LeaderBoard = () => {
     return (
-        <div className="container">
-            <div className="columns is-centered">
-                <div className="column has-text-centered">
-                    <h1 className="title">Zestgeek Leader board</h1>
-                </div>
-            </div>
             <div className="columns is-centered">
                 <div className="column is-two-thirds is-centered flex">
                     <LeaderBoardTable list={leaderBoardList} />
                 </div>
             </div>
-        </div>
     )
 }
 
